@@ -2,6 +2,12 @@
 
 ---
 
+## Backend Github Link
+
+```bash
+  https://github.com/amaan6498/oristo-api.git
+```
+
 ## 2.1.3.1. Overview of What is Being Built
 
 The **Task Management App** is a _modern, web-based_ Single Page Application (SPA) designed to help users organize and track tasks efficiently. It provides an intuitive interface for managing tasks with key features, including:
@@ -181,8 +187,8 @@ The app uses a **web page frontend**. A mobile app was not developed, as the web
 1. **Clone the Repository**:
 
    ```bash
-   git clone <repository-url>
-   cd task-management-app
+   git clone https://github.com/amaan6498/oristo-frontend.git
+   cd my-app
    ```
 
 2. **Install Frontend Dependencies**:
