@@ -1,0 +1,179 @@
+.nav-container {
+    position: fixed;
+    top: 20px; /* Acts like margin-top */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid #fff;
+    border-radius: 8px;
+    z-index: 1000;
+}
+  
+  
+.nav-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.input-nav{
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  margin-right: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.nav-button{
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/*  */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-form input,
+.task-form select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+}
+
+.form-buttons button[type="button"] {
+  background-color: #ccc;
+  color: #000;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+/* Responsive display toggles */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline-block;
+  }
+
+  .mobile-create-icon {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-wrap {
+    gap: 0.5rem; /* tighter spacing for mobile */
+  }
+}
+
+
+/* Mobile icon buttons */
+.mobile-icon {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile search bar (below navbar) */
+.mobile-search-bar {
+  margin-top: 90px; /* adjust depending on nav height */
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.full-width {
+  width: 100%;
+}

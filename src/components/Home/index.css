@@ -1,0 +1,200 @@
+.home-container{
+    padding-top: 100px; 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first-container{
+    width: 42%;
+    height: 80vh;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.second-container{
+    width: 42%;
+    height: 80vh;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.heading{
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.react-calendar {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 350px;
+  font-family: 'Segoe UI', sans-serif;
+  /* box-shadow: 0 0 10px #fff; */
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.react-calendar__navigation button {
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.react-calendar__tile {
+  background: none;
+  border: 1px solid transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+
+.react-calendar__tile--now {
+  background: #333;
+  border: 1px solid #fff;
+}
+
+.react-calendar__tile--active {
+  background: #fff;
+  color: #000;
+}
+
+.react-calendar__tile:hover {
+  background: #444;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-form {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 340px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+}
+
+.edit-form h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-form input,
+.edit-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.edit-form select {
+  background-color: #fff;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-group button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-group button[type="submit"] {
+  background-color: #000;
+  color: white;
+}
+
+.btn-group button[type="submit"]:hover {
+  background-color: #000;
+}
+
+.btn-group button[type="button"] {
+  background-color: #ccc;
+}
+
+.btn-group button[type="button"]:hover {
+  background-color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+
+  .first-container,
+  .second-container {
+    width: 90%;
+    height: auto;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  .react-calendar {
+    max-width: 90%;
+  }
+}
